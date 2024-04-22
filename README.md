@@ -11,4 +11,4 @@ Download the game zip [here](https://plasticapples.itch.io/its-spreading-the-fir
 WASD - Movement\
 Left Click - Ranged Attack\
 Right Click - Melee Attack\
-Escape - Pause menu\
+Escape - Pause menu
