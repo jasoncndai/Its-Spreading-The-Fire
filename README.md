@@ -8,7 +8,7 @@ This is a fork of a Pirate Software Game Jam 14 submission of a godot game made 
 Download the game zip [here](https://plasticapples.itch.io/its-spreading-the-fire) and run the .exe.
 
 ## CONTROLS
-WASD - Movement
-Left Click - Ranged Attack
-Right Click - Melee Attack
-Escape - Pause menu
+WASD - Movement\
+Left Click - Ranged Attack\
+Right Click - Melee Attack\
+Escape - Pause menu\
