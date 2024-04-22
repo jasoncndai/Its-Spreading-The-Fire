@@ -1,0 +1,135 @@
+[gd_scene load_steps=25 format=3 uid="uid://dx7ip1d61d35h"]
+
+[ext_resource type="Script" path="res://scenes/mushroom_enemy.gd" id="1_rq62q"]
+[ext_resource type="Texture2D" uid="uid://ug5cmpkt11ii" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle00.png" id="2_p1f1q"]
+[ext_resource type="Texture2D" uid="uid://7jmec7nwqyrs" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle01.png" id="3_ahgg6"]
+[ext_resource type="Texture2D" uid="uid://beuimu0j67o7l" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle02.png" id="4_brm0b"]
+[ext_resource type="Texture2D" uid="uid://8tjrqoo2ndsa" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle03.png" id="5_v4151"]
+[ext_resource type="Texture2D" uid="uid://ccowl2eoyri4w" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle04.png" id="6_7q5bd"]
+[ext_resource type="Texture2D" uid="uid://c6nx545odv0co" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle05.png" id="7_qukt2"]
+[ext_resource type="Texture2D" uid="uid://be6h0ajim0bqy" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle06.png" id="8_tw8yv"]
+[ext_resource type="Texture2D" uid="uid://dwmrsni3td011" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle07.png" id="9_ss5j2"]
+[ext_resource type="Texture2D" uid="uid://chdf7hnijatka" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle08.png" id="10_5sitq"]
+[ext_resource type="Texture2D" uid="uid://fmr83o874vin" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle09.png" id="11_xh4kb"]
+[ext_resource type="Texture2D" uid="uid://btc53xwdbbt2x" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle10.png" id="12_r150q"]
+[ext_resource type="Texture2D" uid="uid://dmkfg2rlfkwkj" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle11.png" id="13_hhpyr"]
+[ext_resource type="Texture2D" uid="uid://bh7wlc0kq03oq" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle12.png" id="14_polra"]
+[ext_resource type="Texture2D" uid="uid://cpi3qbi0abfq1" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle13.png" id="15_6ekd3"]
+[ext_resource type="Texture2D" uid="uid://lqq2yerwcowo" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle14.png" id="16_dd4kb"]
+[ext_resource type="Texture2D" uid="uid://d1kx8kp5aujgq" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle15.png" id="17_m6tns"]
+[ext_resource type="Texture2D" uid="uid://dx20yhssa3eqr" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle16.png" id="18_jgg5a"]
+[ext_resource type="Texture2D" uid="uid://bknt547uat12i" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle17.png" id="19_gm4v5"]
+[ext_resource type="Texture2D" uid="uid://b0ugl5mhumrcd" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle18.png" id="20_qw2ud"]
+[ext_resource type="Texture2D" uid="uid://des36k6sjvsce" path="res://assets/Character Animations/Mushroom_Miniboss_Sequence/Mushroom_Miniboss_Idle19.png" id="21_ctqw0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b1j4e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p1f1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ahgg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_brm0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v4151")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7q5bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qukt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tw8yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ss5j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5sitq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xh4kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_r150q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hhpyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_polra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6ekd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dd4kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_m6tns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jgg5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gm4v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qw2ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ctqw0")
+}],
+"loop": true,
+"name": &"_default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cbmid"]
+radius = 49.0408
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5mpr8"]
+radius = 500.0
+
+[node name="Mushroom Enemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 2
+collision_mask = 15
+motion_mode = 1
+script = ExtResource("1_rq62q")
+
+[node name="mushroomDude" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -40)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_b1j4e")
+animation = &"_default"
+flip_h = true
+
+[node name="Enemycollisionbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -32)
+shape = SubResource("CircleShape2D_cbmid")
+
+[node name="targetingRange" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="targetingRange"]
+shape = SubResource("CircleShape2D_5mpr8")
+
+[node name="enemyInvincibleFrames" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="attackCooldownEnemy" type="Timer" parent="."]
+wait_time = 0.4
+autostart = true
+
+[node name="sporeOrigin" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-17, -34)
+
+[connection signal="body_entered" from="targetingRange" to="." method="_on_targeting_range_body_entered"]
+[connection signal="body_exited" from="targetingRange" to="." method="_on_targeting_range_body_exited"]
+[connection signal="timeout" from="enemyInvincibleFrames" to="." method="_on_enemy_invincible_frames_timeout"]
+[connection signal="timeout" from="attackCooldownEnemy" to="." method="_on_attack_cooldown_enemy_timeout"]

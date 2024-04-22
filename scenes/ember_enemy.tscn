@@ -1,0 +1,206 @@
+[gd_scene load_steps=41 format=3 uid="uid://ou7o7h063lr2"]
+
+[ext_resource type="Texture2D" uid="uid://dgfpewml5ykd6" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence00.png" id="1_o6tta"]
+[ext_resource type="Script" path="res://scenes/ember_enemy.gd" id="1_viyx2"]
+[ext_resource type="Texture2D" uid="uid://d2j14qk5onroh" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence01.png" id="2_vj6kv"]
+[ext_resource type="Texture2D" uid="uid://dtn70xcoh4aqw" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence02.png" id="3_5lxs0"]
+[ext_resource type="Texture2D" uid="uid://dvvcbeuopty2q" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence03.png" id="4_4k0me"]
+[ext_resource type="Texture2D" uid="uid://f8f105gp7jt2" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence04.png" id="5_n8plp"]
+[ext_resource type="Texture2D" uid="uid://khgeoqp82ebj" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence05.png" id="6_xbu4y"]
+[ext_resource type="Texture2D" uid="uid://b137nrby1h5qe" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence06.png" id="7_ardim"]
+[ext_resource type="Texture2D" uid="uid://1pxknrh2j6sh" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence07.png" id="8_n5ulk"]
+[ext_resource type="Texture2D" uid="uid://cik8epwcy8n4v" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence08.png" id="9_7a85g"]
+[ext_resource type="Texture2D" uid="uid://blq234a28adb0" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence09.png" id="10_64v2j"]
+[ext_resource type="Texture2D" uid="uid://c43o4y67abunb" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence10.png" id="11_kj0jr"]
+[ext_resource type="Texture2D" uid="uid://bbiih0pn17vrl" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence11.png" id="12_wsfmn"]
+[ext_resource type="Texture2D" uid="uid://xv1pvfyhwayb" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence12.png" id="13_acy56"]
+[ext_resource type="Texture2D" uid="uid://xodaaqvahy2w" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence13.png" id="14_y1dcy"]
+[ext_resource type="Texture2D" uid="uid://ce1nwti1brcsw" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence14.png" id="15_4qy3n"]
+[ext_resource type="Texture2D" uid="uid://bvkd0l1xg33ap" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence15.png" id="16_iywki"]
+[ext_resource type="Texture2D" uid="uid://wwdirt22jfoi" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence16.png" id="17_dm8t5"]
+[ext_resource type="Texture2D" uid="uid://d2edytcavvgrs" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence17.png" id="18_evfr3"]
+[ext_resource type="Texture2D" uid="uid://docrp1bycr475" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence18.png" id="19_b68mb"]
+[ext_resource type="Texture2D" uid="uid://bi2ul88kaa18a" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence19.png" id="20_t5jwd"]
+[ext_resource type="Texture2D" uid="uid://c8aevrn23msfx" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence20.png" id="21_8dch7"]
+[ext_resource type="Texture2D" uid="uid://bfb4ijcb8on8r" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence21.png" id="22_ab5sd"]
+[ext_resource type="Texture2D" uid="uid://c17fmjux178pi" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence22.png" id="23_abc3s"]
+[ext_resource type="Texture2D" uid="uid://clessdaardwp7" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence23.png" id="24_bw7wj"]
+[ext_resource type="Texture2D" uid="uid://nbvkkanhvvbe" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence24.png" id="25_j4qds"]
+[ext_resource type="Texture2D" uid="uid://ca1croacn3uiw" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence25.png" id="26_5nk2n"]
+[ext_resource type="Texture2D" uid="uid://3btple83awv8" path="res://assets/Character Animations/Fire_Minion_Idle_Sequence/Fire_Minion_Sequence26.png" id="27_gv22r"]
+[ext_resource type="Texture2D" uid="uid://dxhl2d28p456i" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack0.png" id="28_dw7ri"]
+[ext_resource type="Texture2D" uid="uid://cis5ygq6owabs" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack1.png" id="29_66vwq"]
+[ext_resource type="Texture2D" uid="uid://luiqunhiyn0d" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack2.png" id="30_0lhqt"]
+[ext_resource type="Texture2D" uid="uid://c2sal0ca6rj2j" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack3.png" id="31_qbdxm"]
+[ext_resource type="Texture2D" uid="uid://2gl7vqupsi0q" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack4.png" id="32_yum2c"]
+[ext_resource type="Texture2D" uid="uid://catj47gp27qo3" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack5.png" id="33_dspij"]
+[ext_resource type="Texture2D" uid="uid://co2ymjn6cnukg" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack6.png" id="34_1u4l4"]
+[ext_resource type="Texture2D" uid="uid://bl6lqxh4bbpfg" path="res://assets/Character Animations/Fire_Minion_Attack_Sequence/FIre_Minion_Attack7.png" id="35_gvws7"]
+[ext_resource type="Script" path="res://scenes/Mitosis.gd" id="37_ad2jn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kr2p8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o6tta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vj6kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5lxs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4k0me")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n8plp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xbu4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ardim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n5ulk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7a85g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_64v2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kj0jr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wsfmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_acy56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_y1dcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4qy3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_iywki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_dm8t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_evfr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_b68mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_t5jwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8dch7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ab5sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_abc3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_bw7wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_j4qds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5nk2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gv22r")
+}],
+"loop": true,
+"name": &"_default",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_dw7ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_66vwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0lhqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_qbdxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_yum2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dspij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_1u4l4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_gvws7")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lse4"]
+size = Vector2(42, 44)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_evnnq"]
+radius = 333.122
+
+[node name="Ember Enemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 2
+collision_mask = 15
+motion_mode = 1
+script = ExtResource("1_viyx2")
+
+[node name="emberDude" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -40)
+scale = Vector2(0.075, 0.075)
+sprite_frames = SubResource("SpriteFrames_kr2p8")
+animation = &"_default"
+frame_progress = 0.820008
+
+[node name="Enemycollisionbox" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -15)
+shape = SubResource("RectangleShape2D_0lse4")
+
+[node name="chaseRange" type="Area2D" parent="."]
+position = Vector2(0, -25)
+collision_layer = 2
+collision_mask = 15
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="chaseRange"]
+position = Vector2(0, 25)
+shape = SubResource("CircleShape2D_evnnq")
+
+[node name="enemyInvincibleFrames" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="Mitosis" type="Node2D" parent="."]
+script = ExtResource("37_ad2jn")
+
+[node name="MitosisCooldown" type="Timer" parent="Mitosis"]
+wait_time = 5.0
+autostart = true
+
+[connection signal="child_entered_tree" from="." to="Mitosis" method="_on_ember_enemy_child_entered_tree"]
+[connection signal="tree_entered" from="." to="Mitosis" method="_on_ember_enemy_tree_entered"]
+[connection signal="body_entered" from="chaseRange" to="." method="_on_chase_range_body_entered"]
+[connection signal="body_exited" from="chaseRange" to="." method="_on_chase_range_body_exited"]
+[connection signal="timeout" from="enemyInvincibleFrames" to="." method="_on_enemy_invincible_frames_timeout"]
+[connection signal="timeout" from="Mitosis/MitosisCooldown" to="Mitosis" method="_on_mitosis_cooldown_timeout"]

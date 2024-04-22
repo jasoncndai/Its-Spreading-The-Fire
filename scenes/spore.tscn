@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://bgy5b63kpo058"]
+
+[ext_resource type="Script" path="res://scenes/spore.gd" id="1_6kncv"]
+[ext_resource type="Texture2D" uid="uid://b2mvlysf0ys2x" path="res://assets/VFX/VFX_Mushroom_Miniboss_Attack_Sequence/SporeVFX_0000.png" id="2_jevr2"]
+[ext_resource type="Texture2D" uid="uid://byxgymo3q1i1x" path="res://assets/VFX/VFX_Mushroom_Miniboss_Attack_Sequence/SporeVFX_0001.png" id="3_h0p5b"]
+[ext_resource type="Texture2D" uid="uid://cdt6cdcmm3r3o" path="res://assets/VFX/VFX_Mushroom_Miniboss_Attack_Sequence/SporeVFX_0002.png" id="4_xwqow"]
+[ext_resource type="Texture2D" uid="uid://dhuwglfcyc1ee" path="res://assets/VFX/VFX_Mushroom_Miniboss_Attack_Sequence/SporeVFX_0003.png" id="5_lamgc"]
+[ext_resource type="Texture2D" uid="uid://dt6x0satmu6gr" path="res://assets/VFX/VFX_Mushroom_Miniboss_Attack_Sequence/SporeVFX_0004.png" id="6_74ayc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lp6lw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jevr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h0p5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xwqow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lamgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_74ayc")
+}],
+"loop": true,
+"name": &"_default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_odeyx"]
+
+[node name="Spore" type="RigidBody2D" groups=["spores"]]
+collision_layer = 16
+collision_mask = 7
+script = ExtResource("1_6kncv")
+
+[node name="sporeFrames" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_lp6lw")
+animation = &"_default"
+frame_progress = 0.179092
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_odeyx")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

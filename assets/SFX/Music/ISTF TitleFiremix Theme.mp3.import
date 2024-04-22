@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxwwx6py7xtcw"
+path="res://.godot/imported/ISTF TitleFiremix Theme.mp3-c4d379859ee0f35205b8b37bbaaa80cc.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/Music/ISTF TitleFiremix Theme.mp3"
+dest_files=["res://.godot/imported/ISTF TitleFiremix Theme.mp3-c4d379859ee0f35205b8b37bbaaa80cc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

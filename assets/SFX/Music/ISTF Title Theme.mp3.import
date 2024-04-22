@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://htcrfd7qv60r"
+path="res://.godot/imported/ISTF Title Theme.mp3-4c2a0b6afc5b5e628250ca1e223471e2.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/Music/ISTF Title Theme.mp3"
+dest_files=["res://.godot/imported/ISTF Title Theme.mp3-4c2a0b6afc5b5e628250ca1e223471e2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

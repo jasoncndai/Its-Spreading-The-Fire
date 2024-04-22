@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcejkfxgc0msb"
+path="res://.godot/imported/ISTF Boss3.mp3-95d8c963a87d832d2dfde25027cc0f9c.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/Music/ISTF Boss3.mp3"
+dest_files=["res://.godot/imported/ISTF Boss3.mp3-95d8c963a87d832d2dfde25027cc0f9c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,128 @@
+[gd_scene load_steps=6 format=3 uid="uid://dg7ybhp5a8qp6"]
+
+[ext_resource type="Script" path="res://mainMenu.gd" id="1_7onif"]
+[ext_resource type="Texture2D" uid="uid://bs60vjl5noc44" path="res://assets/Background/Sliding Background/Combined looks like this.png" id="2_b085g"]
+[ext_resource type="Script" path="res://VolumeSlider.gd" id="3_mvk7e"]
+[ext_resource type="AudioStream" uid="uid://cchrv2kyjqdcb" path="res://assets/SFX/SoundEffects/Fire__crackle_quiet.wav" id="4_ee1cb"]
+[ext_resource type="AudioStream" uid="uid://htcrfd7qv60r" path="res://assets/SFX/Music/ISTF Title Theme.mp3" id="5_uvhrf"]
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_7onif")
+
+[node name="BckgroundImg" type="Sprite2D" parent="."]
+position = Vector2(12, 2)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_b085g")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -166.5
+offset_right = 170.0
+offset_bottom = 166.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.596078, 0.207843, 0.0470588, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "IT'S SPREADING: THE FIRE
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+metadata/_edit_use_anchors_ = true
+
+[node name="MasterLabel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.737255, 0.968627, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "-		Master Volume			+"
+horizontal_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_mvk7e")
+bus_name = "Master"
+
+[node name="MusicLabel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.737255, 0.968627, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "-		Music Volume			+"
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_mvk7e")
+bus_name = "Music"
+
+[node name="SFXLabel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.737255, 0.968627, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "-		SFX Volume			+"
+horizontal_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_mvk7e")
+bus_name = "SFX"
+
+[node name="FireSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ee1cb")
+autoplay = true
+bus = &"SFX"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_uvhrf")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="changed" from="MarginContainer/VBoxContainer/VBoxContainer/MasterSlider" to="." method="_on_volume_slider_changed"]

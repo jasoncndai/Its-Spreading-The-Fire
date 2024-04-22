@@ -1,0 +1,85 @@
+[gd_scene load_steps=14 format=3 uid="uid://v2k1o3ixjxmv"]
+
+[ext_resource type="Script" path="res://scenes/Fire.gd" id="1_fgmby"]
+[ext_resource type="Texture2D" uid="uid://bim86nq5g6srv" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0000.png" id="2_5wnuu"]
+[ext_resource type="Texture2D" uid="uid://cxmclueb6hn03" path="res://placeholders/fire_sprite.png" id="2_8hu0j"]
+[ext_resource type="Texture2D" uid="uid://f7e8eh7n4jg7" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0001.png" id="3_jo174"]
+[ext_resource type="Texture2D" uid="uid://cwysggthkiu0p" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0002.png" id="4_hsqmn"]
+[ext_resource type="Texture2D" uid="uid://dv6kg8d7a3vcl" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0003.png" id="5_u3w5a"]
+[ext_resource type="Texture2D" uid="uid://bhe30v0f5cp33" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0004.png" id="6_wnej7"]
+[ext_resource type="Texture2D" uid="uid://d2068pmesu0nr" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0005.png" id="7_roy3n"]
+[ext_resource type="Texture2D" uid="uid://bem8bi4oqv62o" path="res://assets/VFX/VFX_Fire_Sequence/VFX_Fire_0006.png" id="8_8i0dy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiup4"]
+size = Vector2(19, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adaer"]
+atlas = ExtResource("2_8hu0j")
+region = Rect2(39, 18, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cxbj"]
+atlas = ExtResource("2_8hu0j")
+region = Rect2(59, 18, 20, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nl7ur"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5wnuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jo174")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hsqmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u3w5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wnej7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_roy3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8i0dy")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adaer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cxbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cxbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cxbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cxbj")
+}],
+"loop": true,
+"name": &"Start",
+"speed": 5.0
+}]
+
+[node name="Fire" type="Area2D"]
+script = ExtResource("1_fgmby")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_kiup4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.04, 0.04)
+sprite_frames = SubResource("SpriteFrames_nl7ur")
+animation = &"Idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

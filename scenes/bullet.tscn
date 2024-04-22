@@ -1,0 +1,126 @@
+[gd_scene load_steps=9 format=3 uid="uid://gvtbnrt8rem6"]
+
+[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_bcy71"]
+[ext_resource type="Texture2D" uid="uid://bsmik4c2xmvdd" path="res://assets/VFX/VFX_Leaf_Attack_Sequence/VFX_Leaf_Attack0000.png" id="2_vthu5"]
+[ext_resource type="Texture2D" uid="uid://clirwvxw6pdam" path="res://assets/VFX/VFX_Leaf_Attack_Sequence/VFX_Leaf_Attack0001.png" id="3_ck7un"]
+[ext_resource type="Texture2D" uid="uid://ruquanfrg4od" path="res://assets/VFX/VFX_Leaf_Attack_Sequence/VFX_Leaf_Attack0002.png" id="4_wljpu"]
+[ext_resource type="Texture2D" uid="uid://b8wqvq6tmuyxq" path="res://assets/VFX/VFX_Leaf_Attack_Sequence/VFX_Leaf_Attack0003.png" id="5_mrnng"]
+[ext_resource type="Texture2D" uid="uid://b1n8wtx4bcqm8" path="res://assets/VFX/VFX_Leaf_Attack_Sequence/VFX_Leaf_Attack0004.png" id="6_hsxv6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbc0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vthu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ck7un")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wljpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mrnng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hsxv6")
+}],
+"loop": true,
+"name": &"_default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wjgb7"]
+radius = 5.0
+
+[node name="Bullet" type="RigidBody2D" groups=["bullets"]]
+scale = Vector2(1.72, 1.72)
+collision_layer = 8
+collision_mask = 6
+mass = 0.01
+gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_bcy71")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.07, 0.07)
+sprite_frames = SubResource("SpriteFrames_kbc0e")
+animation = &"_default"
+frame_progress = 0.587791
+speed_scale = 1.5
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-0.290697, -2.38419e-07)
+scale = Vector2(1.36628, 0.348837)
+
+[node name="BulletBox" type="CollisionShape2D" parent="."]
+position = Vector2(13, 0)
+shape = SubResource("CircleShape2D_wjgb7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
